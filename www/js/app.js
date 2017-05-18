@@ -54,7 +54,6 @@ angular.module('prudential', ['ionic', 'prudential.controllers', 'prudential.ser
           }
         }
       })
-
       .state('app.spaj_start', {
         cache: false,
         url: '/spaj_start',
@@ -65,7 +64,16 @@ angular.module('prudential', ['ionic', 'prudential.controllers', 'prudential.ser
           }
         }
       })
-
+      .state('app.policy_info_health_question_1', {
+        cache: false,
+        url: '/policy_info_health_question_1',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/spaj_form/policy_info_health_question_1.html',
+            controller: 'HealthQuestionCtrl'
+          }
+        }
+      })
       .state('app.addquestions', {
         cache: false,
         url: '/addquestions',

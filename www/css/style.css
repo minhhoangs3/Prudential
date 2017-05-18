@@ -253,3 +253,7 @@ input[type="checkbox"], input[type="radio"] {
 .even-block {
   background: #F7F5F5;
 }
+
+.inline-block{
+  display: inline-block;
+}

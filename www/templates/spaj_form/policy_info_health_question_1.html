@@ -1,0 +1,129 @@
+<ion-view cache-view="false" view-title="SPAJ New Business Application" id="health-question">
+  <ion-content>
+    <div class="container text-center">
+      <div class="item">
+        <div class="progress-bar">
+          //Todo
+        </div>
+      </div>
+      <div class="item">
+        <div class="row">
+          <h1>My height and weight</h1>
+        </div>
+        <div class="row">
+          <div class="col col-50 inline-block">
+            <input type="number" name="height">
+            <label>cm</label>
+          </div>
+          <div class="col col-50 inline-block">
+            <input type="number" name="weight">
+            <label>kg</label>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="row">
+          <h1>Are you a smoker?</h1>
+        </div>
+        <div class="col col-50 inline-block">
+          <button class="button smoker-btn" ng-class="{selected: data.smoke}" ng-click="data.smoke = true">Yes</button>
+        </div>
+        <div class="col col-50 inline-block">
+          <button class="button smoker-btn" ng-class="{selected: !data.smoke}" ng-click="data.smoke = false">No</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="row">
+          <h1>How many sticks of cigarettes do you smoke in a day?</h1>
+        </div>
+        <label class="item item-input phone-input">
+            <input ng-model='data.numberOfCigaretes' type="tel" placeholder="Enter">
+          </label>
+      </div>
+      <div class="item">
+        <div class="row">
+          <h1>Are you on any medication?</h1>
+        </div>
+        <div class="col col-50 inline-block">
+          <button class="button smoker-btn" ng-class="{selected: data.isOnMedication}" ng-click="data.isOnMedication = true">Yes</button>
+        </div>
+        <div class="col col-50 inline-block">
+          <button class="button smoker-btn" ng-class="{selected: !data.isOnMedication}" ng-click="data.isOnMedication = false">No</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="row">
+          <h1>Please specify the medication type and the reason for that.</h1>
+        </div>
+        <label class="item item-input phone-input">
+            <input ng-model='data.numberOfCigaretes' type="tel" placeholder="Enter">
+          </label>
+      </div>
+      <div class="item suffer-condition">
+        <h1>Do you suffer from the following conditions?</h1>
+        <div class="list">
+          <div class="item item-input">
+            <div class="col col-70">
+              <span class="input-label">High blood pressure</span>
+            </div>
+            <div class="col col-30 text-right">
+              <button>Yes</button>
+              <button>No</button>
+            </div>
+          </div>
+          <div class="item item-input">
+            <div class="col col-70">
+              <span class="input-label">High blood pressure</span>
+            </div>
+            <div class="col col-30 text-right">
+              <button>Yes</button>
+              <button>No</button>
+            </div>
+          </div>
+          <div class="item item-input">
+            <div class="col col-70">
+              <span class="input-label">High blood pressure</span>
+            </div>
+            <div class="col col-30 text-right">
+              <button>Yes</button>
+              <button>No</button>
+            </div>
+          </div>
+          <div class="item item-input">
+            <div class="col col-70">
+              <span class="input-label">High blood pressure</span>
+            </div>
+            <div class="col col-30 text-right">
+              <button>Yes</button>
+              <button>No</button>
+            </div>
+          </div>
+          <div class="item item-input">
+            <div class="col col-70">
+              <span class="input-label">High blood pressure</span>
+            </div>
+            <div class="col col-30 text-right">
+              <button>Yes</button>
+              <button>No</button>
+            </div>
+          </div>
+          <div class="item item-input">
+            <div class="col col-70">
+              <span class="input-label">High blood pressure</span>
+            </div>
+            <div class="col col-30 text-right">
+              <button>Yes</button>
+              <button>No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <div ng-if="customer.existing" class="bar bar-footer bar-assertive">
+    <a ng-click="clickButtonHandle('/app')" title="Continue" class="btn">Continue<button class="button button-clear"><i class="icon ion-ios-arrow-forward"></i></button></a>
+  </div>
+  <div ng-if="!customer.existing" class="bar bar-footer bar-assertive not-active">
+    <a title="Continue" class="btn">Continue<button class="button button-clear"><i class="icon ion-ios-arrow-forward"></i></button></a>
+  </div>
+</ion-view>
